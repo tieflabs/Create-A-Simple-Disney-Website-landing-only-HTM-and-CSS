@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+#banner{
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.5),#001685), 
+	url(background/girl-laptop.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.line{
+	height: 1px;
+	width: 100%;
+	background: #041566;
+}
+.logo{
+	position: absolute;
+	width: 250px;
+	top: 4%;
+	left: 3%;
+}
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 180px;
+}
+.banner-text h1{
+	font-size: 130px;
+	font-family: 'Kaushan Script', sans-serif;
+}
+.banner-text p{
+	color: #0b95c7;
+	font-size: 20px;
+	font-style: italic;
+}
+.banner-btn{
+	margin: 70px auto 0;
+}
+.banner-btn a{
+	position: relative;
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	font-weight: 500;
+	border: .5px solid #fff;
+	z-index: 1;
+	transition: 0.5s;
+}
+.banner-btn a span{
+	position: absolute;
+	/*width: 50%;*/
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+	color: #001685;
+}
+#navSide{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: #041566;
+	z-index: 2;
+	transition: 0.5s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #82deff;
+	font-weight: 600;
+}
+#menuBtn{
+	width: 50px;
+	height: 50px;
+	background: #001685;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	z-index: 3;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#menuBtn #menu{
+	font-size: 30px;
+	margin-top: 10px;
+	color: #fff;
+	text-decoration-line: none;
+}
+

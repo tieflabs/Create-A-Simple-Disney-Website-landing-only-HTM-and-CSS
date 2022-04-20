@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Website|HTM and CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section id="banner">
+		<div class="line"></div>
+		<img src="icons/Logo.wine.svg" class="logo">
+		<div class="banner-text">
+			<h1>Movies Studio</h1>
+			<p>Watch new movies and new Disney SuperStars</p>
+			<div class="banner-btn">
+				<a href="#"><span></span>Watch Now</a>
+				<a href="#"><span></span>Buy New</a>
+			</div>
+		</div>
+	</section>
+	<div id="navSide">
+		<nav>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">MOVIES</a></li>
+				<li><a href="#">NEWEST</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="menuBtn">
+			<i class="fa-solid fa-bars" id="menu"></i>
+		</div>
+		<script src="https://kit.fontawesome.com/017df30a84.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	var menuBtn = document.getElementById("menuBtn")
+	var navSide = document.getElementById("navSide")
+	var menu = document.getElementById("menu")
+
+navSide.style.right = "-250px";
+
+	menuBtn.onclick = function() {
+		// body...
+		if(navSide.style.right == "-250px"){
+			navSide.style.right = "0";
+		}
+		else{
+			navSide.style.right = "-250px";
+		}
+	}
+</script>
+</body>
+</html>
